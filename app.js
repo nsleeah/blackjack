@@ -10,7 +10,7 @@ let sumEl = document.getElementById("sum-el")
 let cardsEl = document.getElementById("cards-el")
 
 console.log(sumEl)
-//Logic.
+//Start Game Logic
 const startGame = () => {
     cardsEl.textContent = "Cards: " + firstCard + " " + secondCard
     sumEl.textContent = "Sum: " + sum
@@ -25,6 +25,11 @@ const startGame = () => {
     }
     
     messageEl.textContent = message
+}
+
+//New Card Logic
+const newCard = () => {
+     
 }
 
 
