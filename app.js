@@ -1,6 +1,6 @@
 // Declare Variables..
 let firstCard = 10
-let secondCard = 30
+let secondCard = 4
 let sum = firstCard + secondCard 
 let hasBlackJack = false
 let isAlive = true
@@ -9,9 +9,13 @@ let messageEl = document.getElementById("message-el")
 let sumEl = document.getElementById("sum-el")
 let cardsEl = document.getElementById("cards-el")
 
-console.log(sumEl)
-//Start Game Logic
+// Create a new function called startGame() that calls renderGame()
 const startGame = () => {
+    renderGame()
+}
+
+//Render Game Logic
+const renderGame = () => {
     cardsEl.textContent = "Cards: " + firstCard + " " + secondCard
     sumEl.textContent = "Sum: " + sum
     if (sum <= 20) {
@@ -29,7 +33,10 @@ const startGame = () => {
 
 //New Card Logic
 const newCard = () => {
-     
+     let card = 6
+     sum += card
+     renderGame()
+
 }
 
 
