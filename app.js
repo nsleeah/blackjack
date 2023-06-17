@@ -1,5 +1,5 @@
-/*
-// Declare Variables..
+
+/*// Declare Variables..
 let firstCard = 10
 let secondCard = 4
 let cards = [firstCard, secondCard]
@@ -37,30 +37,24 @@ const renderGame = () => {
 const newCard = () => {
      let card = 6
      sum += card
+     cards.push(card)
+     console.log(cards)
      renderGame()
 
 }
 */
 
-//Adding Removing Items from Array.
-let cards = [7, 4]
-cards.push(6) //Method
-console.log(cards)
+//For Loops
+//// Where should we START counting?
+// Where is the FINISH line?
+// What's the STEP SIZE we should use?
+//    START           FINISH       STEP SIZE
+for ( let count = 10;  count < 21;  count += 1 )  {
+    
+    console.log(count)
 
-let messages = [
-    "Hey, how's it going?",        
-    "I'm great, thank you! How about you?",
-    "All good. Been working on my portfolio lately."
-]
+}
 
-let newMessage = "Same here!"
-
-messages.push(newMessage)
-console.log(messages)
-
-//Remove from Array.
-messages.pop()
-console.log(messages)
 
 
 
