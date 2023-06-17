@@ -1,8 +1,9 @@
 // Declare Variables..
 let firstCard = 10
 let secondCard = 11
-let sum = firstCard + secondCard 
+let sum = firstCard + secondCard + 4
 let hasBlackJack = false
+let isAlive = true
 console.log(sum)
 
 //Logic.
@@ -13,8 +14,8 @@ if (sum <= 20) {
     hasBlackJack = true
 } else {
     console.log("You're out of the game! 😭")
+    isAlive = false
 }
 
-//Cash Out(Keeps Track of State of Game from Above Logic)
-console.log(hasBlackJack) 
+console.log(isAlive) 
 
