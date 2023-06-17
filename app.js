@@ -1,3 +1,4 @@
+/*
 // Declare Variables..
 let firstCard = 10
 let secondCard = 4
@@ -39,12 +40,30 @@ const newCard = () => {
      renderGame()
 
 }
+*/
 
-//Note: Arrays are 0 Indexed.
-//Length is not - console.log( featuredPosts.length ) Actual Length
+//Adding Removing Items from Array.
+let cards = [7, 4]
+cards.push(6) //Method
+console.log(cards)
 
-//Defining an Array
-//let Leah = ["Leah", 0, true]
+let messages = [
+    "Hey, how's it going?",        
+    "I'm great, thank you! How about you?",
+    "All good. Been working on my portfolio lately."
+]
+
+let newMessage = "Same here!"
+
+messages.push(newMessage)
+console.log(messages)
+
+//Remove from Array.
+messages.pop()
+console.log(messages)
+
+
+
 
 
 
