@@ -43,5 +43,8 @@ const newCard = () => {
 //Note: Arrays are 0 Indexed.
 //Length is not - console.log( featuredPosts.length ) Actual Length
 
+//Defining an Array
+//let Leah = ["Leah", 0, true]
+
 
 
