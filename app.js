@@ -65,19 +65,19 @@ for (let i = 10; i < 101; i += 10) {
     console.log(i)
 }
 
-//For Loops and Arrays - Combine Array w/ For Loop
-let messages = [
-    "Hey, how's it going?",        
-    "I'm great, thank you! How about you?",
-    "All good. Been working on my portfolio lately.",
-    "Same here!",
-    "Great to hear",
-    "🙌"
-]
-
-for (let i = 0; i < messages.length; i += 1) {
-    console.log(messages[i])
+//Write your first array based for loop
+// Create a for loop that logs out all the cards in the array
+// Use cards.length to specify how long the loop should run
+let cards = [7, 3, 9]
+for (let i = 0; i < 3 ; i +=1) {
+    console.log(cards[i])
 }
+
+// Could Also Use
+// let cards = [7, 3, 9]
+//for (let i = 0; cards.length ; i++) {
+    //console.log(cards[i])
+//}
 
 
 
