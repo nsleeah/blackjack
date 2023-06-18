@@ -10,6 +10,15 @@ let messageEl = document.getElementById("message-el")
 let sumEl = document.getElementById("sum-el")
 let cardsEl = document.getElementById("cards-el")
 
+//Create Plater Object
+let player = {
+    name: "Lee",
+    chips: 200
+}
+
+let playerEl = document.getElementById("player-el")
+playerEl.textContent = player.name + ": $" + player.chips //KEY.
+
 //Random Card Funct -
 function getRandomCard() {
     let randomNumer = Math.floor( Math.random()*13 ) + 1
@@ -65,4 +74,3 @@ const newCard = () => {
     }
 }
 
-//Game succesfully working.
