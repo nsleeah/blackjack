@@ -1,15 +1,3 @@
-
-/*
-// Declare Variables..
-let cards =  []
-let sum = 0
-let hasBlackJack = false
-let isAlive = false //Changed condition
-let message = ""
-let messageEl = document.getElementById("message-el")
-let sumEl = document.getElementById("sum-el")
-let cardsEl = document.getElementById("cards-el")
-
 //Create Plater Object
 let player = {
     name: "Lee",
@@ -17,13 +5,24 @@ let player = {
 
 }
 
-
+// Declare Variables..
+let cards =  []
+let sum = 0
+let hasBlackJack = false
+let isAlive = false 
+let message = ""
+let messageEl = document.getElementById("message-el")
+let sumEl = document.getElementById("sum-el")
+let cardsEl = document.getElementById("cards-el")
 let playerEl = document.getElementById("player-el")
-playerEl.textContent = player.name + ": $" + player.chips //KEY.
+//Render Players name/chips in PlayerEl
+playerEl.textContent = player.name + ": £" + player.chips
 
-//Random Card Funct -
+
+//Random Card Logic -
 function getRandomCard() {
     let randomNumer = Math.floor( Math.random()*13 ) + 1
+    //let randomNumber = Math.floor(Math.random() * 14) - Alternative Way?
     if (randomNumer > 10) {
         return 10
     } else if (randomNumer === 1) {
@@ -31,10 +30,10 @@ function getRandomCard() {
     } else {
         return randomNumer
     }
-    //let randomNumber = Math.floor(Math.random() * 14) - Alternative Way?
+    
 }
 
-// Create a new function called startGame() that calls renderGame()
+// Start Game Logic
 const startGame = () => {
     isAlive = true
     let firstCard = getRandomCard()
@@ -76,38 +75,3 @@ const newCard = () => {
      renderGame()
     }
 }
-*/
-
-//Objects Notes
-//omposite / complex data type
-// key-value pairs
-//Course, title, lessons, creator, length object e.g
-// Lookup bracket notation, . notation is easier 
-
-
-let course = {
-    title: "CSS",
-    lessons: 16,
-    creator: "FreeCodeCamp",
-    length: 30,
-    level: 1,
-    isFree: true,
-    tags: ["html", "css"]
-}
-
-
-console.log( course.tags )
-
-// Create an object that represents an airbnb castle listing.
-// It should contain at least one boolean, one string, one number, and one array
-// Log out at least two of the keys using the dot notation
-
-let castle = {
-    title: "Live like a king in my castle",
-    price: 190,
-    isSuperHost: true,
-    images: ["img/castle1.png", "img/caste2.png"]
-}
-
-console.log(castle.price)
-console.log(castle.isSuperHost)
