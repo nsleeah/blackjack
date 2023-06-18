@@ -65,4 +65,4 @@ const newCard = () => {
     }
 }
 
-//Stop when game over.
+//Game succesfully working.
