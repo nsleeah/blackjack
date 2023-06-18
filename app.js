@@ -1,4 +1,5 @@
 
+/*
 // Declare Variables..
 let firstCard = getRandomCard()
 let secondCard = getRandomCard()
@@ -50,3 +51,9 @@ const newCard = () => {
      renderGame()
 
 }
+*/
+
+//Math Object Practice - Math Random - it generates a random number between 0 and 1 (not inclusive of 1)
+let randomNumber = Math.random()
+
+console.log(randomNumber)
