@@ -20,7 +20,7 @@
 - Basic JavaScript - if else statements
 - Semantic HTML
 - Using background images
-- reminder using o’clock run functions buttons - o’clock. xx
+- onClick event handler
 - Arrow functions (ES6 syntax) instead of traditional function syntax
 - Adding hover effects and transitions to buttons
 - Displaying dynamic information on the page using text content
