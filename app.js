@@ -67,5 +67,13 @@ const newCard = () => {
 //console.log(flooredNumber)
 
 //Creating a Dice using Math Random and Math Floor
-let randomNumber = Math.floor( Math.random() * 7 )
-console.log(randomNumber)
+//let randomNumber = Math.floor( Math.random() * 7 )
+//console.log(randomNumber)
+
+// Create a function, rollDice(), that returns a random number between 1 and 6
+const rollDice = () => {
+    let randomNumber = Math.floor( Math.random() * 6 ) + 1
+    return randomNumber
+}
+
+console.log( rollDice() )
