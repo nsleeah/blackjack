@@ -54,6 +54,7 @@ const newCard = () => {
 */
 
 //Math Object Practice - Math Random - it generates a random number between 0 and 1 (not inclusive of 1)
-let randomNumber = Math.random()
-
-console.log(randomNumber)
+let randomNumber = Math.random() * 6
+console.log(randomNumber) 
+// Math.random() = 0.000 -> 0.999
+// Math.random() * 6 = 0.000 -> 5.999
