@@ -1,5 +1,5 @@
 
-/*
+
 // Declare Variables..
 let firstCard = getRandomCard()
 let secondCard = getRandomCard()
@@ -12,9 +12,11 @@ let messageEl = document.getElementById("message-el")
 let sumEl = document.getElementById("sum-el")
 let cardsEl = document.getElementById("cards-el")
 
-//Random Card Funct
+//Random Card Funct -
+// // Make this function return a random number between 1 and 13
 function getRandomCard() {
-    return 5
+    return randomNumber = Math.floor(Math.random()* 13) + 1
+    //let randomNumber = Math.floor(Math.random() * 14) - Alternative Way?
 }
 
 // Create a new function called startGame() that calls renderGame()
@@ -51,29 +53,3 @@ const newCard = () => {
      renderGame()
 
 }
-*/
-
-//Math Object Practice - Math Random - it generates a random number between 0 and 1 (not inclusive of 1)
-//let randomNumber = Math.random() * 6
-//console.log(randomNumber) 
-// Math.random() = 0.000 -> 0.999
-// Math.random() * 6 = 0.000 -> 5.999
-//Math.floor(Math.random() * 6) 0-5
-
-//Math Objects
-//Random - generates random number 
-//Floor - it removes the decimals
-//let flooredNumber = Math.floor(3.45632) //Output 3
-//console.log(flooredNumber)
-
-//Creating a Dice using Math Random and Math Floor
-//let randomNumber = Math.floor( Math.random() * 7 )
-//console.log(randomNumber)
-
-// Create a function, rollDice(), that returns a random number between 1 and 6
-const rollDice = () => {
-    let randomNumber = Math.floor( Math.random() * 6 ) + 1
-    return randomNumber
-}
-
-console.log( rollDice() )
