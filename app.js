@@ -1,7 +1,7 @@
 
 // Declare Variables..
-let firstCard = 10
-let secondCard = 4
+let firstCard = getRandomCard()
+let secondCard = getRandomCard()
 let cards = [firstCard, secondCard]
 let sum = firstCard + secondCard 
 let hasBlackJack = false
@@ -38,7 +38,7 @@ const renderGame = () => {
 
 //New Card Logic
 const newCard = () => {
-     let card = 6
+     let card = getRandomCard()
      sum += card
      cards.push(card)
      console.log(cards)
