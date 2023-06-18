@@ -1,5 +1,5 @@
 
-
+/*
 // Declare Variables..
 let cards =  []
 let sum = 0
@@ -14,7 +14,9 @@ let cardsEl = document.getElementById("cards-el")
 let player = {
     name: "Lee",
     chips: 200
+
 }
+
 
 let playerEl = document.getElementById("player-el")
 playerEl.textContent = player.name + ": $" + player.chips //KEY.
@@ -62,6 +64,7 @@ const renderGame = () => {
     messageEl.textContent = message
 }
 
+
 //New Card Logic
 const newCard = () => {
     // Only allow the player to get a new card if she IS alive and does NOT have Blackjack
@@ -73,4 +76,38 @@ const newCard = () => {
      renderGame()
     }
 }
+*/
 
+//Objects Notes
+//omposite / complex data type
+// key-value pairs
+//Course, title, lessons, creator, length object e.g
+// Lookup bracket notation, . notation is easier 
+
+
+let course = {
+    title: "CSS",
+    lessons: 16,
+    creator: "FreeCodeCamp",
+    length: 30,
+    level: 1,
+    isFree: true,
+    tags: ["html", "css"]
+}
+
+
+console.log( course.tags )
+
+// Create an object that represents an airbnb castle listing.
+// It should contain at least one boolean, one string, one number, and one array
+// Log out at least two of the keys using the dot notation
+
+let castle = {
+    title: "Live like a king in my castle",
+    price: 190,
+    isSuperHost: true,
+    images: ["img/castle1.png", "img/caste2.png"]
+}
+
+console.log(castle.price)
+console.log(castle.isSuperHost)
