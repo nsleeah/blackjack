@@ -1,4 +1,4 @@
-# JS Blackjack Game 🃏
+# JavaScript Blackjack Game 🃏
 
 **The aim of the game** is to acquire a hand total of 21 or as close to it as possible without exceeding it.<br>
 <sub>Customised and personalised a JavaScript blackjack game, incorporating personal touches and adaptations, through Scrimba's course.</sub>
@@ -17,7 +17,7 @@
 <hr>
 
 **Recap of: JS fundamentals covered.**
-- Basic js - if else statements
+- Basic JavaScript - if else statements
 - Semantic HTML
 - Using background images
 - reminder using o’clock run functions buttons - o’clock. xx
@@ -33,7 +33,7 @@
 <hr>
 
 **Future Implementations:** <br>
-- Make more visual
+- Enhance visual presentation by incorporating graphics, including images of playing cards.
 
 <hr>
 
