@@ -55,10 +55,14 @@ const renderGame = () => {
 
 //New Card Logic
 const newCard = () => {
+    // Only allow the player to get a new card if she IS alive and does NOT have Blackjack
+    if (isAlive === true && hasBlackJack === false) {
      let card = getRandomCard()
      sum += card
      cards.push(card)
      console.log(cards)
      renderGame()
-
+    }
 }
+
+//Stop when game over.
