@@ -1,5 +1,5 @@
 
-/*// Declare Variables..
+// Declare Variables..
 let firstCard = 10
 let secondCard = 4
 let cards = [firstCard, secondCard]
@@ -18,7 +18,10 @@ const startGame = () => {
 
 //Render Game Logic
 const renderGame = () => {
-    cardsEl.textContent = "Cards: " + cards[0] + " " + cards[1]
+    cardsEl.textContent = "Cards: "
+    for (let i = 0; i < cards.length; i++) {
+        cardsEl.textContent += cards[i] + " "
+    }
     sumEl.textContent = "Sum: " + sum
     if (sum <= 20) {
         message = "Do you want to draw a new card?"
@@ -42,47 +45,3 @@ const newCard = () => {
      renderGame()
 
 }
-*/
-
-//For Loops
-//// Where should we START counting?
-// Where is the FINISH line?
-// What's the STEP SIZE we should use?
-//    START           FINISH       STEP SIZE
-for ( let count = 10;  count < 21;  count += 1 )  {
-    
-    console.log(count)
-
-}
-
-
-//START
-//FINISH
-//STEP SIZE
-// Create a for loop that counts from 10 to 100 in steps of 10
-// Use console.log to log out the numbers
-for (let i = 10; i < 101; i += 10) {
-    console.log(i)
-}
-
-//Write your first array based for loop
-// Create a for loop that logs out all the cards in the array
-// Use cards.length to specify how long the loop should run
-let cards = [7, 3, 9]
-for (let i = 0; i < 3 ; i +=1) {
-    console.log(cards[i])
-}
-
-// Could Also Use
-// let cards = [7, 3, 9]
-//for (let i = 0; cards.length ; i++) {
-    //console.log(cards[i])
-//}
-
-
-
-
-
-
-
-
